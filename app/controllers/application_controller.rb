@@ -7,6 +7,9 @@ class ApplicationController < ActionController::Base
   helper_method :user_signed_in?
   helper_method :correct_user?
 
+  def start
+  end
+
   private
     def current_user
       begin
@@ -32,5 +35,4 @@ class ApplicationController < ActionController::Base
         redirect_to root_url, :alert => 'You need to sign in for access to this page.'
       end
     end
-
 end
