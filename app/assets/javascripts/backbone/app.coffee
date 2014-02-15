@@ -4,10 +4,14 @@
 
   App.on 'initialize:before', (options) ->
     App.environment = options.environment
+    App.current_user = new Backbone.Model({email: 'foo@email.com'})
 
   App.addRegions
     headerRegion: '#header-region'
     mainRegion:    '#main-region'
+
+  App.addInitializer ->
+    App.module('HeaderApp').start(App.current_user)
 
   App.rootRoute = ''
 
