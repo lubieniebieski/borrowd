@@ -6,6 +6,7 @@
     %meta{ name: 'description', content: "#{content_for?(:description) ? yield(:description) : 'Borrowd'}" }
     = stylesheet_link_tag 'application', media: 'all'
     = javascript_include_tag 'application'
+    = include_gon init: true
     = csrf_meta_tags
   %body
     %header
@@ -14,3 +15,5 @@
     %main
       .container
         = yield
+    %footer
+      (c) lubieniebieski 2014
