@@ -1,4 +1,4 @@
-@B.module 'Utilities', (Utilities, App, Backbone, Marionette, $, _) ->
+@Borrowd.module 'Utilities', (Utilities, App, Backbone, Marionette, $, _) ->
 
   _.extend App,
 

@@ -1,4 +1,4 @@
-@B = do (Backbone, Marionette) ->
+@Borrowd = do (Backbone, Marionette) ->
 
   App = new Marionette.Application
 
