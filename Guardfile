@@ -1,17 +1,6 @@
 # A sample Guardfile
 # More info at https://github.com/guard/guard#readme
 
-guard :bundler do
-  watch('Gemfile')
-  # Uncomment next line if your Gemfile contains the `gemspec' command.
-  # watch(/^.+\.gemspec/)
-end
-
-guard 'rails' do
-  watch('Gemfile.lock')
-  watch(%r{^(config|lib)/.*})
-end
-
 guard :rspec, cmd: 'spring rspec' do
   watch(%r{^spec/.+_spec\.rb$})
   watch(%r{^lib/(.+)\.rb$})     { |m| "spec/lib/#{m[1]}_spec.rb" }
