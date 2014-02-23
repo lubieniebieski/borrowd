@@ -16,6 +16,11 @@ Borrowd is a web app for calculating group expenses, creating reminders and gett
 * calculating how much you owe to someone, or how much do others owe you
 * sending reminders and notifications about overdue payments
 
+## development
+
+1. create fb app for development
+  * use key and secret to in your `.env` file
+
 ## credits
 
 * thank you for visiting this repo!
